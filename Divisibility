@@ -1,0 +1,20 @@
+
+
+N = int(input())
+data = [int(x) for x in input().split()]
+
+last = [x % 10 for x in data]
+
+combined_digit = 0
+
+for digit in last:
+    combined_digit = combined_digit * 10 + digit
+
+
+
+
+if combined_digit % 10 == 0:
+    print ("Yes")
+else:
+    print ("No")
+
